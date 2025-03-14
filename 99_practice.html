@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="card"></div>
+    </div>
+
+    <script>
+        var container = document.querySelector('.container')
+        container.addEventListener('mousemove', function(e){
+            var x = e.offsetX
+            var y = e.offsetY
+            console.log(x, y)
+            container.style = 'transform: rotateY(deg)'
+        })
+    </script>
+
+    <style>
+        .container {
+            width: 220px; height: 310px; transition: all 0.2s;
+        }
+        .card {
+            width: 220px; height: 310px;
+            background-image: url(https://i.namu.wiki/i/pc9AO5TWn-7nm29MvXLluiMhIaXWSR3Aoxg0sGsVu5rdMJ1q8BJxNCIRBkmS8j_omuePQiig--MRD9fjoVE6pg.webp);
+            background-size: cover;
+        }
+    </style>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
